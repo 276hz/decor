@@ -16,9 +16,16 @@ on:
         required: false
         default: "us"
       icon_size:
-        description: "Cạnh icon (512 gốc; 256 hoặc 180 cho file nhẹ - nên dùng khi nhiều app)"
+        description: "Cạnh icon: 180 là đủ nét cho iPhone và nhẹ nhất (512 làm file rất nặng)"
         required: true
-        default: "256"
+        default: "180"
+      icon_format:
+        description: "Định dạng icon (jpg nhẹ hơn png nhiều)"
+        type: choice
+        options:
+          - jpg
+          - png
+        default: "jpg"
       replace_existing:
         description: "Thay payload cũ trùng nhãn thay vì bỏ qua"
         type: boolean
@@ -50,11 +57,12 @@ jobs:
           COUNTRY: ${{ inputs.country }}
           FALLBACK: ${{ inputs.fallback }}
           ICON_SIZE: ${{ inputs.icon_size }}
+          ICON_FORMAT: ${{ inputs.icon_format }}
           REPLACE: ${{ inputs.replace_existing }}
           USE_BASE: ${{ inputs.use_base }}
           OUTPUT_NAME: ${{ inputs.output_name }}
         run: |
-          ARGS=(apps.txt --country "$COUNTRY" --fallback "$FALLBACK" --size "$ICON_SIZE" -o "$OUTPUT_NAME")
+          ARGS=(apps.txt --country "$COUNTRY" --fallback "$FALLBACK" --size "$ICON_SIZE" --fmt "$ICON_FORMAT" -o "$OUTPUT_NAME")
           if [ "$REPLACE" = "true" ]; then
             ARGS+=(--replace)
           fi
@@ -67,7 +75,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: decor-mobileconfig
-          path: ${{ inputs.output_name }}
+          path: |
+            ${{ inputs.output_name }}
+            apps_report.txt
           if-no-files-found: error
 
       - name: Commit result
