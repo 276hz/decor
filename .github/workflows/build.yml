@@ -1,0 +1,64 @@
+name: Build decor mobileconfig
+
+on:
+  workflow_dispatch:
+    inputs:
+      country:
+        description: "Store dùng để tìm app (vn, us, jp...)"
+        required: true
+        default: "vn"
+      use_base:
+        description: "Nối thêm vào decor.xml có sẵn trong repo"
+        type: boolean
+        default: true
+      output_name:
+        description: "Tên file đầu ra"
+        required: true
+        default: "decor.mobileconfig"
+      commit_result:
+        description: "Commit file kết quả vào repo"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate mobileconfig
+        env:
+          COUNTRY: ${{ inputs.country }}
+          USE_BASE: ${{ inputs.use_base }}
+          OUTPUT_NAME: ${{ inputs.output_name }}
+        run: |
+          ARGS=(apps.txt --country "$COUNTRY" -o "$OUTPUT_NAME")
+          if [ "$USE_BASE" = "true" ] && [ -f decor.xml ]; then
+            ARGS+=(--base decor.xml)
+          fi
+          python3 make_decor.py "${ARGS[@]}"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: decor-mobileconfig
+          path: ${{ inputs.output_name }}
+          if-no-files-found: error
+
+      - name: Commit result
+        if: ${{ inputs.commit_result }}
+        env:
+          OUTPUT_NAME: ${{ inputs.output_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$OUTPUT_NAME"
+          git diff --cached --quiet || git commit -m "Update $OUTPUT_NAME"
+          git push
