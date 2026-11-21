@@ -3,7 +3,9 @@
 #   xxx://...  (không phải apps.apple.com)   -> URL mở khi bấm icon (vd instagram://)
 #   chữ thường khác                          -> nhãn hiển thị dưới icon
 # Không đặt URL thì icon mở trang App Store của app.
-# Dòng có cả tên và ID: script tự kiểm tra ID có đúng tên không, sai thì tìm lại theo tên.
+# Phần đầu là TÊN HIỂN THỊ dưới icon (vd "Minecraft", không phải "Minecraft: Play with Friends!").
+# Dòng có cả tên và ID: script kiểm tra ID có đúng tên không, sai thì tìm lại theo tên.
+# Tìm theo tên chỉ nhận kết quả có tên khớp; không khớp thì báo lỗi chứ không lấy app lạ.
 # Dòng bắt đầu bằng # bị bỏ qua.
 
 # ===== Đã có ID =====
@@ -185,7 +187,7 @@ Don't Starve: Pocket Edition | 1012298403 | Don't Starve
 Papers, Please | 935216956
 
 # ===== Đua xe / Thể thao =====
-Asphalt 9: Legends | 805603214 | Asphalt 9
+Asphalt Legends Unite | Asphalt 9
 Real Racing 3 | 556164008
 CSR Racing 2 | 887947640
 Need for Speed No Limits | 883393043
@@ -208,3 +210,515 @@ Brawlhalla | 1491520571
 WWE SuperCard
 Super Mario Run | 1145275343
 Animal Crossing: Pocket Camp Complete | 6547834967 | Pocket Camp
+
+###########################################################################
+# ===== DANH SÁCH MỞ RỘNG (tìm theo tên) =====
+###########################################################################
+
+# ===== Anime / Gacha / RPG =====
+NIKKE: Goddess of Victory | NIKKE
+Girls' Frontline 2: Exilium
+Snowbreak: Containment Zone
+Path to Nowhere
+Solo Leveling: Arise
+Black Clover M
+The Seven Deadly Sins: Grand Cross
+Seven Knights 2
+Seven Knights Idle Adventure
+Love and Deepspace
+Tears of Themis
+Jujutsu Kaisen Phantom Parade
+My Hero Academia: The Strongest Hero
+ONE PIECE Bounty Rush | One Piece Bounty Rush
+ONE PIECE TREASURE CRUISE | One Piece Treasure Cruise
+Saint Seiya Awakening: Knights of the Zodiac | Saint Seiya Awakening
+Digimon ReArise
+Persona 5: The Phantom X
+FINAL FANTASY VII EVER CRISIS | Final Fantasy VII Ever Crisis
+Final Fantasy XV: A New Empire
+DRAGON QUEST TACT | Dragon Quest Tact
+DRAGON QUEST WALK | Dragon Quest Walk
+Pokémon Café ReMix
+Pokémon Quest
+Monster Strike
+Puzzle & Dragons
+Princess Connect! Re: Dive
+Alchemy Stars
+Langrisser
+Lord of Heroes
+Eversoul
+Lineage W
+Odin: Valhalla Rising
+Night Crows
+Ni no Kuni: Cross Worlds
+Ragnarok M: Eternal Love
+Dragon Raja
+Conqueror's Blade
+Idle Heroes
+Hero Wars: Fantasy World | Hero Wars
+Soul Knight
+Archero
+Archero 2
+Rush Royale
+Hustle Castle
+Gems of War
+Marvel Contest of Champions
+MARVEL Future Fight | Marvel Future Fight
+MARVEL Strike Force
+Star Wars: Galaxy of Heroes
+Star Wars: Hunters
+Disney Heroes: Battle Mode
+Injustice 2
+Mortal Kombat: Onslaught
+Summoners War: Chronicles
+Valkyrie Connect
+Brown Dust 2
+Etheria: Restart
+Dislyte
+Cookie Run: OvenBreak
+LINE Rangers
+Mobile Legends: Adventure
+Tales of Wind
+Castle Clash
+Rise of Castles: Ice and Fire
+Evertale
+Dragon Quest Monsters: Super Light
+Echocalypse
+Lost Sword
+Heroes Charge
+
+# ===== Bắn súng / Sinh tồn =====
+Bullet Force
+Frag Pro Shooter
+Dead Trigger 2
+Into the Dead 2
+Cover Fire
+Last Day on Earth: Survival
+ARK: Ultimate Mobile Edition
+Modern Strike Online
+Sniper Fury
+Hunter Assassin
+Zombie Frontier 4
+Pixel Strike 3D
+Respawnables
+Hitman GO
+Deus Ex GO
+Lara Croft GO
+Tomb Raider Reloaded
+Rainbow Six Mobile
+World War Heroes
+Warpath
+Block Strike
+Zombie Catchers
+Plants vs. Zombies Heroes
+Plants vs. Zombies 3
+Left to Survive
+Gangstar Vegas
+Gangstar New Orleans
+Dead Effect 2
+Zombie Gunship Survival
+Dawn of Zombies
+Dino Hunter: Deadly Shores
+Fallout Shelter
+The Walking Dead: Road to Survival
+The Walking Dead No Man's Land
+Mech Arena
+Armajet
+Hero Hunters
+Survivor.io
+Dead Ahead: Zombie Warfare
+Kill Shot Bravo
+Contract Killer
+Sniper Strike
+
+# ===== Chiến thuật / 4X / Tower Defense =====
+Clash of Kings
+Vikings: War of Clans
+Game of War - Fire Age | Game of War
+Mobile Strike
+Call of Dragons
+Empires & Puzzles
+Art of War: Legions
+Total Battle: War Strategy Games | Total Battle
+Top War: Battle Game
+Doomsday: Last Survivors
+Frostpunk: Beyond the Ice
+The Battle of Polytopia
+Sid Meier's Civilization VI | Civilization VI
+XCOM: Enemy Within
+Into the Breach
+Rome: Total War
+Bloons TD Battles 2
+Bloons Monkey City
+Kingdom Rush Frontiers
+Kingdom Rush Origins
+Kingdom Rush Vengeance
+Kingdom Rush Alliance
+Infinitode 2
+Game of Thrones: Conquest
+Star Trek Fleet Command
+Warhammer 40,000: Tacticus
+Lords & Knights
+Stormfall: Rise of Balur
+Throne: Kingdom at War
+March of Empires
+Nations of Darkness
+Rise of the Kings
+Age of Origins
+Evolution: Battle for Utopia
+DomiNations
+
+# ===== Thể thao =====
+NBA 2K Mobile Basketball | NBA 2K Mobile
+NBA LIVE Mobile Basketball | NBA Live Mobile
+NBA Infinite
+NBA NOW 24
+MLB 9 Innings 24
+NFL Rivals
+Football Manager 2024 Mobile
+Soccer Super Star
+Score! Match
+Golf Rival
+Golf Battle
+Mini Golf King
+WGT Golf Game by Topgolf | WGT Golf
+Tennis Clash
+Table Tennis Touch
+Badminton League
+Real Cricket 24
+Cricket League
+World Cricket Championship 3
+Ultimate Tennis
+Bowling King
+Pool Billiards Pro
+Basketball Stars
+Dunk Nation 3x3
+Skate City
+Touchgrind BMX 2
+Tony Hawk's Skate Jam
+Retro Bowl
+Retro Bowl College
+Boxing Star
+WWE Champions
+Football Strike
+Head Soccer
+Soccer Stars
+Stick Cricket Super League
+Fishing Clash
+Hunting Clash
+Wrestling Empire
+
+# ===== Đua xe =====
+Asphalt 8: Airborne
+Asphalt Nitro 2
+CarX Street
+CarX Drift Racing 2
+CarX Highway Racing
+Drift Max Pro
+Horizon Chase
+Horizon Chase 2
+GRID Autosport
+Gear.Club Stripes
+Rush Rally 3
+Rush Rally Origins
+Traffic Rider
+Traffic Racer
+Hot Wheels: Race Off
+Hot Wheels Unlimited
+Beach Buggy Racing
+Sonic Forces
+Sonic Dash
+Sonic the Hedgehog Classic
+Sonic CD
+Trial Xtreme 4
+Moto Rider GO: Highway Traffic
+Extreme Car Driving Simulator
+Car Parking Multiplayer
+Rally Fury
+Rebel Racing
+Offroad Outlaws
+Mad Skills Motocross 3
+Racing in Car 2
+Fast & Furious Takedown
+Hill Climb Racing 3
+Bus Simulator: Ultimate
+Truck Simulator: Ultimate
+Euro Truck Driver
+
+# ===== Casual / Puzzle =====
+Candy Crush Jelly Saga
+Bubble Witch 3 Saga
+Farm Heroes Saga
+Pet Rescue Saga
+Bejeweled Blitz
+Peggle Blast
+Match Masters
+Matchington Mansion
+June's Journey
+Hidden City
+Lily's Garden
+Gummy Drop!
+Cookie Jam
+Solitaire Grand Harvest
+Spider Solitaire
+Mahjong Titan
+Zen Match
+Triple Match 3D
+Tile Master 3D
+Sort It 3D
+Water Sort Puzzle
+Ball Sort Puzzle
+Hexa Sort
+Color Block Jam
+Parking Jam 3D
+Pull the Pin
+Mob Control
+Count Masters
+Run Race 3D
+Hole.io
+Agar.io
+Slither.io
+Paper.io 2
+Snake.io
+Helix Jump
+Color Switch
+Magic Tiles 3
+Fun Race 3D
+Brain Test
+Brain Out
+Where's My Water?
+Where's My Perry?
+Cut the Rope 2
+Cut the Rope Remastered
+The Room
+The Room Two
+The Room Three
+The Room: Old Sins
+Gorogoa
+Lost in Play
+Threes!
+Flow Free
+Unblock Me
+Word Cookies!
+CodyCross
+4 Pics 1 Word
+Trivia Crack 2
+Merge Mansion
+Merge Magic!
+Toy Blast
+Toy Story Drop!
+Angry Birds Journey
+Angry Birds Friends
+Bad Piggies
+Angry Birds Reloaded
+Candy Crush Friends Saga
+Farm Heroes Super Saga
+Little Alchemy 2
+Doodle God
+Monument Valley 3
+Tiny Wings
+Ridiculous Fishing
+Smash Hit
+Love Nikki
+Shining Nikki
+Dress Up Time Princess
+Happy Color
+Piano Tiles 2
+Dumb Ways to Die 2: The Games
+
+# ===== Mô phỏng / Xây dựng / Nhập vai đời sống =====
+FarmVille 2: Country Escape | FarmVille 2
+FarmVille 3
+Family Island
+Farming Simulator 23 Mobile
+Farming Simulator 20
+Cooking Diary
+Cooking Fever
+Cooking Madness
+Cooking Craze
+Diner DASH Adventures
+My Cafe
+Idle Miner Tycoon
+AdVenture Capitalist
+Cookie Clicker
+Egg, Inc.
+Tap Titans 2
+Pocket City
+Pocket City 2
+Game Dev Tycoon
+Game Dev Story
+RollerCoaster Tycoon Classic
+RollerCoaster Tycoon Touch
+Train Station 2
+Airport City
+IMVU
+ZEPETO
+Toca Boca World
+Toca Kitchen 2
+Toca Hair Salon 4
+My Talking Tom 2
+My Talking Tom Friends
+My Talking Hank
+Talking Ben the Dog
+Cat Game - The Cats Collector! | Cat Game
+Neko Atsume: Kitty Collector
+Disney Magic Kingdoms
+Disney Emoji Blitz
+Sago Mini World
+LEGO Tower
+LEGO Hill Climb Adventures
+LEGO Builder's Journey
+LEGO Star Wars: Castaways
+SpongeBob: Krusty Cook-Off
+Hello Kitty Island Adventure
+Tiny Tower
+Dragon Mania Legends
+Dragon Village
+Monster Super League
+Ice Age Adventures
+House Flip
+Home Design Makeover!
+Design Home
+Property Brothers Home Design
+
+# ===== Platformer / Arcade / Runner =====
+Despicable Me: Minion Rush
+Minion Rush
+Rayman Adventures
+Rayman Jungle Run
+Rayman Fiesta Run
+Dandara
+Leo's Fortune
+Super Hexagon
+Canabalt
+Zombie Tsunami
+Looney Tunes World of Mayhem
+Tom & Jerry: Chase
+Ski Safari
+Hungry Shark World
+PAC-MAN
+Space Invaders Infinity Gene
+Doodle Jump 2
+Shovel Knight Pocket Dungeon
+Terra Nil
+Sonic Prime Dash
+Crash Bandicoot: On the Run!
+Skiing Yeti Mountain
+Jetpack Joyride 2
+Sky Force Reloaded
+Space Marshals
+Space Marshals 2
+Super Phantom Cat
+Dadish
+Dadish 3
+Cat Quest
+Cat Quest II
+
+# ===== Bài / Cờ / Cờ bạc =====
+MONOPOLY
+The Game of Life 2
+RISK: Global Domination
+Ticket to Ride
+Carcassonne: Official Board Game
+CATAN Universe
+Splendor
+Lichess
+Backgammon Live
+Yahtzee With Buddies
+Spades Plus
+GWENT: The Witcher Card Game | Gwent
+Shadowverse
+Shadowverse: Worlds Beyond
+Zynga Poker
+Pokerist
+Governor of Poker 3
+Slotomania Slots
+House of Fun
+Huuuge Casino
+Monopoly Solitaire
+Magic Chess: Go Go
+TFT: Teamfight Tactics | TFT
+Chess Rush
+Dota Underlords
+Auto Chess
+Tiến Lên Miền Nam
+Phỏm
+Mậu Binh
+
+# ===== Indie / Premium / Port console =====
+HADES
+INSIDE
+Oxenfree
+Device 6
+Year Walk
+Superbrothers: Sword & Sworcery EP | Sword & Sworcery
+Reigns
+Reigns: Her Majesty
+Reigns: Game of Thrones
+FTL: Faster Than Light
+Don't Starve: Shipwrecked
+Grimvalor
+Pascal's Wager
+The Witness
+Myst
+Riven
+The Banner Saga
+The Banner Saga 2
+Kingdom: New Lands
+Kingdom Two Crowns
+Crashlands
+Titan Quest
+Baldur's Gate: Enhanced Edition | Baldur's Gate
+Icewind Dale: Enhanced Edition | Icewind Dale
+Planescape: Torment: Enhanced Edition | Planescape Torment
+STAR WARS: KOTOR | Star Wars KOTOR
+Star Wars: Knights of the Old Republic II
+Bully: Anniversary Edition | Bully
+Grand Theft Auto: Chinatown Wars | GTA Chinatown Wars
+Grand Theft Auto: Liberty City Stories | GTA Liberty City Stories
+Max Payne Mobile
+FINAL FANTASY TACTICS : WotL | Final Fantasy Tactics
+Chrono Trigger
+Secret of Mana
+Oceanhorn
+Oceanhorn 2
+Chaos Rings
+Death Road to Canada
+This War of Mine
+Shattered Pixel Dungeon
+Pixel Dungeon
+Dicey Dungeons
+Alba: A Wildlife Adventure
+Bastion
+Transistor
+Pyre
+Sunless Sea
+Card Thief
+Tiny Thief
+Rusty Lake: Roots
+Cube Escape: Paradox
+The Past Within
+Samorost 2
+Botanicula
+
+# ===== Kinh dị =====
+Poppy Playtime Chapter 1
+Granny
+Granny: Chapter Two
+Hello Neighbor
+Dark Riddle
+Scary Teacher 3D
+Evil Nun
+Ice Scream 3
+Slendrina
+Baldi's Basics Classic
+Resident Evil 4
+Resident Evil Village
+Alien: Blackout
+
+# ===== Game Việt Nam / Garena =====
+Võ Lâm Truyền Kỳ Mobile
+Gunny Origin
+Ngọc Rồng Online
+Garena Undawn
+Free Fire MAX
