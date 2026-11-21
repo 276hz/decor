@@ -2,8 +2,16 @@
 # Tuỳ chọn:  tên | URL    hoặc    tên | nhãn | URL
 # Dòng bắt đầu bằng # bị bỏ qua.
 
-Instagram | instagram://
-TikTok | snssdk1233://
-Zalo | zalo://
-Messenger | fb-messenger://
-https://apps.apple.com/vn/app/youtube/id544007664
+Minecraft | 479516143 | https://apps.apple.com/vn/app/id479516143
+Roblox | 431946152 | https://apps.apple.com/vn/app/id431946152
+Among Us | 1351168404 | https://apps.apple.com/vn/app/id1351168404
+Genshin Impact | 1517783697 | https://apps.apple.com/vn/app/id1517783697
+PUBG MOBILE | 1330123889 | https://apps.apple.com/vn/app/id1330123889
+Candy Crush Saga | 553834731 | https://apps.apple.com/vn/app/id553834731
+Clash of Clans | 852127278 | https://apps.apple.com/vn/app/id852127278
+Clash Royale | 1053012308 | https://apps.apple.com/vn/app/id1053012308
+Brawl Stars | 1229016807 | https://apps.apple.com/vn/app/id1229016807
+Subway Surfers | 512939461 | https://apps.apple.com/vn/app/id512939461
+Stardew Valley | 1409325647 | https://apps.apple.com/vn/app/id1409325647
+Call of Duty: Mobile | 1280288186 | https://apps.apple.com/vn/app/id1280288186
+Free Fire | 1300146617 | https://apps.apple.com/vn/app/id1300146617
