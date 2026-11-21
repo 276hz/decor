@@ -1,0 +1,9 @@
+# Mỗi dòng một app. Chấp nhận: tên | App Store ID | link App Store
+# Tuỳ chọn:  tên | URL    hoặc    tên | nhãn | URL
+# Dòng bắt đầu bằng # bị bỏ qua.
+
+Instagram | instagram://
+TikTok | snssdk1233://
+Zalo | zalo://
+Messenger | fb-messenger://
+https://apps.apple.com/vn/app/youtube/id544007664
