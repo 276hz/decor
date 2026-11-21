@@ -52,6 +52,22 @@ def parse_line(line):
     return lookup, label, url
 
 
+def first_part(line):
+    return line.split("|")[0].strip()
+
+
+def names_match(wanted, got):
+    """So khớp mềm tên bạn viết với tên app trả về từ App Store."""
+    import difflib
+    norm = lambda x: re.sub(r"[^0-9a-zà-ỹ]+", "", re.sub(r"[®™©]", "", x).casefold())
+    a, b = norm(wanted), norm(got)
+    if not a or not b:
+        return True
+    if a in b or b in a:
+        return True
+    return difflib.SequenceMatcher(None, a, b).ratio() >= 0.75
+
+
 def lookup_in(query, country):
     m = re.search(r"id(\d{5,})", query) or ID_RE.match(query.strip())
     if m:
@@ -110,7 +126,10 @@ def make_payload(label, url, icon, identifier):
 
 
 def short_name(track_name):
-    return re.split(r"\s[-–—:]\s|:", track_name)[0].strip() or track_name
+    """Bỏ phụ đề kiểu 'Tên - mô tả' và ký hiệu ®™; giữ nguyên dấu ':' trong tên."""
+    n = re.sub(r"[®™©]", "", track_name)
+    n = re.split(r"\s[-–—]\s", n)[0].strip()
+    return re.sub(r"\s+", " ", n) or track_name
 
 
 def main():
@@ -153,7 +172,18 @@ def main():
     for line in lines:
         key, label, url = parse_line(line)
         try:
+            hint = first_part(line)
+            hint = None if (ID_RE.match(hint) or STORE_RE.search(hint)) else hint
             app, used = find_app(key, countries)
+            if hint and key != hint:  # đang tra bằng ID -> kiểm tra ID có đúng app không
+                why = None
+                if not app:
+                    why = "ID không tồn tại"
+                elif not names_match(hint, app["trackName"]):
+                    why = f"ID ra '{app['trackName']}'"
+                if why:
+                    print(f"[cảnh báo] {hint}: {why} -> thử tìm theo tên")
+                    app, used = find_app(hint, countries)
             if not app:
                 raise RuntimeError(f"không tìm thấy (đã thử store: {', '.join(countries)})")
             name = label or short_name(app["trackName"])

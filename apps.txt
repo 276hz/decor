@@ -3,8 +3,10 @@
 #   xxx://...  (không phải apps.apple.com)   -> URL mở khi bấm icon (vd instagram://)
 #   chữ thường khác                          -> nhãn hiển thị dưới icon
 # Không đặt URL thì icon mở trang App Store của app.
+# Dòng có cả tên và ID: script tự kiểm tra ID có đúng tên không, sai thì tìm lại theo tên.
 # Dòng bắt đầu bằng # bị bỏ qua.
 
+# ===== Đã có ID =====
 Minecraft | 479516143
 Roblox | 431946152
 Among Us | 1351168404
@@ -18,3 +20,191 @@ Subway Surfers | 512939461
 Stardew Valley | 1409325647
 Call of Duty: Mobile | 1280288186
 Free Fire | 1300146617
+
+# ===== Supercell =====
+Hay Day | 506627515
+Boom Beach | 672150402
+Squad Busters | 1668983788
+
+# ===== Bắn súng / Battle Royale =====
+Call of Duty: Warzone Mobile | 1638368439 | Warzone Mobile
+Standoff 2 | 1359706682
+Critical Ops | 1017717218
+Modern Combat 5 | 656176278
+Blood Strike | 6449512313
+Arena Breakout | 1560765304
+Delta Force | 6451399882
+Rules of Survival | 1307961750
+Zooba | 1459402952
+Pixel Gun 3D | 640111933
+Sniper 3D | 930574573
+Hitman Sniper | 904278510
+Shadowgun Legends | 1091251242
+War Robots | 806077016
+
+# ===== MOBA =====
+Mobile Legends: Bang Bang | 1160056295 | Mobile Legends
+League of Legends: Wild Rift | 1480616990 | Wild Rift
+Honor of Kings | 1619254071
+Arena of Valor | 1150318642
+Pokémon UNITE | 1512321575
+Garena Liên Quân Mobile | Liên Quân Mobile
+
+# ===== RPG / Gacha =====
+Honkai: Star Rail | 1599719154
+Honkai Impact 3rd | 1336342304
+Zenless Zone Zero | 1606356401
+Wuthering Waves | 6475033368
+Tower of Fantasy | 1601586278
+Infinity Nikki | 6502622570
+Azur Lane | 1411126549
+Arknights | 1464872022
+Fate/Grand Order | 1183802626 | FGO
+Blue Archive | 1571873795
+Reverse: 1999 | 1672933190
+Punishing: Gray Raven | 1571685286
+Epic Seven | 1322399438
+RAID: Shadow Legends | 1371565796 | RAID
+AFK Arena | 1375425432
+AFK Journey | 6448786147
+Dragon Ball Z Dokkan Battle | 951627670 | Dokkan Battle
+Dragon Ball Legends | 1358222641
+Bleach: Brave Souls | 1003168863
+Fire Emblem Heroes | 1181774280
+Cookie Run: Kingdom | 1509450845
+Summoners War | 852912420
+Diablo Immortal | 1492005122
+Black Desert Mobile | 1477186880
+Identity V | 1347780764
+Dead by Daylight Mobile | 1452289752
+Pokémon Masters EX | 1512321575
+Lineage 2M | 1538379462
+Sky: Children of the Light | 1462117269 | Sky
+
+# ===== Thẻ bài =====
+Marvel Snap | 1592081003
+Hearthstone | 625257520
+Legends of Runeterra | 1480617557
+Yu-Gi-Oh! Master Duel | 1554247785 | Master Duel
+Yu-Gi-Oh! Duel Links | 1068378177 | Duel Links
+Pokémon TCG Pocket | 6479970832
+Warcraft Rumble | 1600575058
+
+# ===== Chiến thuật / Xây dựng =====
+Rise of Kingdoms | 1354260888
+Lords Mobile | 1071976327
+Whiteout Survival | 6443575749
+Last War: Survival | 6448786147 | Last War
+Evony | 1098157959
+State of Survival | 1452474937
+Age of Empires Mobile | 6476261995
+Kingdom Rush | 516378985
+Bloons TD 6 | 1118115766
+Plants vs. Zombies 2 | 597986893
+Forge of Empires | 711455226
+Mini Metro | 837860959
+Mini Motorways | 1453901000
+Township | 638689075
+Dragon City | 561941526
+Monster Legends | 653508448
+Merge Dragons! | 1208952944
+SimCity BuildIt | 913292932
+The Sims FreePlay | 466966101
+The Sims Mobile
+
+# ===== Giải đố / Casual =====
+Candy Crush Soda Saga | 850417475
+Royal Match | 1482155847
+Gardenscapes | 1105855019
+Homescapes | 1195621598
+Toon Blast | 1176027022
+Fishdom | 1046482500
+Coin Master | 406889139
+Monopoly GO | 1621328561
+Block Blast! | 1617391485
+Woodoku | 1496354836
+Wordscapes | 1207472156
+Words With Friends 2 | 1196764367
+Scrabble GO | 1215933788
+Cut the Rope | 380293530
+Angry Birds 2 | 880047117
+Fruit Ninja | 362949845
+Jetpack Joyride | 457446957
+Doodle Jump | 307727765
+Tetris® | 1491074310
+Sudoku.com | 1193508329
+Microsoft Solitaire Collection | 1103438575 | Solitaire
+The New York Times Games | 307569751 | NYT Games
+Trivia Crack | 651510680
+Heads Up! | 623592465
+UNO! | 1344700142
+Ludo King | 993090598
+Carrom Pool | 1420551478
+8 Ball Pool | 543186831
+Chess - Play & Learn | 329218549 | Chess
+BitLife | 1374403536
+Pou | 575154654
+
+# ===== Chạy / Phiêu lưu / Nhân vật =====
+Temple Run 2 | 572395608
+Crossy Road | 924373886
+Hungry Shark Evolution | 535500008
+Stumble Guys | 1541153375
+Hill Climb Racing | 564540143
+Hill Climb Racing 2 | 1146465836
+Alto's Adventure | 950812012
+Alto's Odyssey | 1182456409
+Talking Tom Gold Run | 1089336971
+My Talking Tom | 657500465
+My Talking Angela 2 | 1536584509
+My Singing Monsters | 521671873
+Toca Life World | 1208138685
+Avakin Life | 740737088
+Play Together | 1402384531
+Pokémon GO | 1094591345
+Monster Hunter Now | 6445906110
+Pikmin Bloom | 1556357398
+Jurassic World Alive | 1231085864
+Ingress Prime | 576505181
+
+# ===== Indie / Premium =====
+Monument Valley | 728293409
+Monument Valley 2 | 1187265767
+Limbo | 656951157
+Badland | 535176909
+Oddmar | 1573405513
+Florence | 1297430468
+Machinarium | 459189186
+Bad North | 1441005816
+Slay the Spire | 1491530147
+Balatro | 6502453075
+Vampire Survivors | 6444525702
+Brotato | 1668755109
+Dead Cells | 1389752090
+Don't Starve: Pocket Edition | 1012298403 | Don't Starve
+Papers, Please | 935216956
+
+# ===== Đua xe / Thể thao =====
+Asphalt 9: Legends | 805603214 | Asphalt 9
+Real Racing 3 | 556164008
+CSR Racing 2 | 887947640
+Need for Speed No Limits | 883393043
+Beach Buggy Racing 2 | 1399253988
+Mario Kart Tour | 1293634699
+Rocket League Sideswipe | 1549027048
+EA SPORTS FC Mobile
+eFootball | 1117270703
+Dream League Soccer 2025
+Score! Hero 2
+Top Eleven | 459035295
+Golf Clash | 1089225191
+Madden NFL 25 Mobile
+
+# ===== Đối kháng / Nintendo =====
+Shadow Fight 3 | 964827011
+Shadow Fight 2 | 696565994
+Real Boxing 2 | 932779605
+Brawlhalla | 1491520571
+WWE SuperCard
+Super Mario Run | 1145275343
+Animal Crossing: Pocket Camp Complete | 6547834967 | Pocket Camp
