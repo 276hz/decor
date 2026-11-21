@@ -11,6 +11,18 @@ on:
         description: "Nối thêm vào decor.xml có sẵn trong repo"
         type: boolean
         default: true
+      fallback:
+        description: "Store dự phòng nếu app không có ở store chính (để trống để tắt)"
+        required: false
+        default: "us"
+      icon_size:
+        description: "Cạnh icon (512 gốc; 256 hoặc 180 cho file nhẹ - nên dùng khi nhiều app)"
+        required: true
+        default: "256"
+      replace_existing:
+        description: "Thay payload cũ trùng nhãn thay vì bỏ qua"
+        type: boolean
+        default: false
       output_name:
         description: "Tên file đầu ra"
         required: true
@@ -36,10 +48,16 @@ jobs:
       - name: Generate mobileconfig
         env:
           COUNTRY: ${{ inputs.country }}
+          FALLBACK: ${{ inputs.fallback }}
+          ICON_SIZE: ${{ inputs.icon_size }}
+          REPLACE: ${{ inputs.replace_existing }}
           USE_BASE: ${{ inputs.use_base }}
           OUTPUT_NAME: ${{ inputs.output_name }}
         run: |
-          ARGS=(apps.txt --country "$COUNTRY" -o "$OUTPUT_NAME")
+          ARGS=(apps.txt --country "$COUNTRY" --fallback "$FALLBACK" --size "$ICON_SIZE" -o "$OUTPUT_NAME")
+          if [ "$REPLACE" = "true" ]; then
+            ARGS+=(--replace)
+          fi
           if [ "$USE_BASE" = "true" ] && [ -f decor.xml ]; then
             ARGS+=(--base decor.xml)
           fi
